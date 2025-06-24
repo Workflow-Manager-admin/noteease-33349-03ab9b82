@@ -1,0 +1,4 @@
+{
+    "command": "PORT=<port> BROWSER=none npm start",
+    "working_directory": "/home/kavia/workspace/code-generation/noteease-33349-03ab9b82/notes_frontend_workspace/notes_frontend"
+}
