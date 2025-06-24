@@ -1,5 +1,7 @@
 # Lightweight React Template for KAVIA
 
+![Project Status: Ready](https://img.shields.io/badge/status-ready-success)
+
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
 ## Features
