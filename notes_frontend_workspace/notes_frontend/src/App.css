@@ -1,9 +1,14 @@
 :root {
-  --base-light: #00ffff;
-  --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  /* Brand Colors (override template) */
+  --primary: #1976d2;
+  --secondary: #424242;
+  --accent: #ffca28;
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --sidebar: #f3f6fa;
+  --text-color: #232a33;
+  --text-secondary: #656d78;
+  --border-color: #e7eaf0;
 }
 
 body {
