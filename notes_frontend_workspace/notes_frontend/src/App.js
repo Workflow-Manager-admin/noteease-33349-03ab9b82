@@ -12,18 +12,19 @@ import "./notesapp.css";
 const API_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3001";
 
 // ----- API Client: CRUD operations -----
+// PUBLIC_INTERFACE
 async function fetchNotes() {
   const res = await fetch(`${API_URL}/notes`);
   if (!res.ok) throw new Error("Failed to fetch notes");
   return res.json();
 }
-
+// PUBLIC_INTERFACE
 async function fetchNote(noteId) {
   const res = await fetch(`${API_URL}/notes/${noteId}`);
   if (!res.ok) throw new Error("Failed to fetch note");
   return res.json();
 }
-
+// PUBLIC_INTERFACE
 async function createNote(note) {
   const res = await fetch(`${API_URL}/notes`, {
     method: "POST",
@@ -33,7 +34,7 @@ async function createNote(note) {
   if (!res.ok) throw new Error("Failed to create note");
   return res.json();
 }
-
+// PUBLIC_INTERFACE
 async function updateNote(noteId, note) {
   const res = await fetch(`${API_URL}/notes/${noteId}`, {
     method: "PUT",
@@ -43,7 +44,7 @@ async function updateNote(noteId, note) {
   if (!res.ok) throw new Error("Failed to update note");
   return res.json();
 }
-
+// PUBLIC_INTERFACE
 async function deleteNote(noteId) {
   const res = await fetch(`${API_URL}/notes/${noteId}`, { method: "DELETE" });
   if (!res.ok) throw new Error("Failed to delete note");
